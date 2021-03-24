@@ -28,12 +28,18 @@ console.log(cognomiLista)
 
 
 for ( var i = 0; i<cognomiLista.length; i++ ) {
-    console.log(cognomiLista[i])
+    console.log(cognomiLista[i])    
     
+    // scrivere la posizione umana della lista in cui il nuovo utente si trova
+
     if (cognomiLista[i] == cognomeUtente) {
-        console.log(i)
+
+        var posizioneLista = i + 1 ;
+        console.log(posizioneLista);
+
+        alert('sei il numero ' + posizioneLista  + ' della lista')
     }
 }
 
-// scrivere la posizione umana della lista in cui il nuovo utente si trova
+
 
