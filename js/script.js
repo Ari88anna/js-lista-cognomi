@@ -27,19 +27,34 @@ cognomiLista.sort();
 console.log(cognomiLista)
 
 
-for ( var i = 0; i<cognomiLista.length; i++ ) {
-    console.log(cognomiLista[i])    
+// for ( var i = 0; i<cognomiLista.length; i++ ) {
+//     console.log(cognomiLista[i])    
     
-    // scrivere la posizione umana della lista in cui il nuovo utente si trova
+//     // scrivere la posizione umana della lista in cui il nuovo utente si trova
+
+//     if (cognomiLista[i] == cognomeUtente) {
+
+//         var posizioneLista = i + 1 ;
+//         console.log(posizioneLista);
+
+//         alert('sei il numero ' + posizioneLista  + ' della lista')
+//     }
+// }
+
+var i = 0;
+
+while ( i<cognomiLista.length ) {
+    console.log(cognomiLista[i])
 
     if (cognomiLista[i] == cognomeUtente) {
 
         var posizioneLista = i + 1 ;
         console.log(posizioneLista);
-
+        
         alert('sei il numero ' + posizioneLista  + ' della lista')
     }
-}
 
+    i++;
+}
 
 
