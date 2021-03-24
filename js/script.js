@@ -8,7 +8,7 @@
 
 // chiediamo il cognome all'utente
 
-var cognomeUtente = prompt ('Qual è il tuo cognome?');
+var cognomeUtente = prompt ('Abbiamo bisogno del tuo cognome per inserirti all\'interno della nostra lista');
 
 // creiamo una lista di cognomi
 
@@ -51,10 +51,12 @@ while ( i<cognomiLista.length ) {
         var posizioneLista = i + 1 ;
         console.log(posizioneLista);
         
-        alert('sei il numero ' + posizioneLista  + ' della lista')
+        
     }
 
     i++;
 }
+
+document.getElementById('lista-cognomi').innerHTML += 'sei il numero ' + posizioneLista + ' della nostra lista';
 
 
